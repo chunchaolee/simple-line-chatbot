@@ -11,7 +11,7 @@ class WelcomeController < ApplicationController
   private
 
   def message(arg)
-    case arg.to_s.downcase
+    case arg.to_s.downcase.squish
     when 'help'
       {
         type: 'text',
