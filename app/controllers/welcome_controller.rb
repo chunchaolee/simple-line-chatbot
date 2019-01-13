@@ -1,3 +1,4 @@
+require 'line/bot'
 class WelcomeController < ApplicationController
   protect_from_forgery with: :null_session
   before_action :set_line_client, :reply_token, only: [:webhook]
